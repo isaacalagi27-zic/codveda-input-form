@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Registration Form | Codveda</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+
+<body>
+  <main class="form-container">
+    <div class="form-header">
+      <span class="form-tag">Welcome</span>
+      <h1>Create Your Account</h1>
+      <p>Fill in your details to get started.</p>
+    </div>
+
+
+    <form id="registrationForm" novalidate>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name"
+          placeholder="Enter your full name"
+          autocomplete="name" required>
+        <small class="error-message" id="nameError"></small>
+      </div>
+
+
+       <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email"
+          placeholder="you@example.com"
+          autocomplete="email" required>
+        <small class="error-message" id="emailError"></small>
+      </div>
+
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"
+          placeholder="At least 8 characters"
+          autocomplete="new-password" required>
+        <small class="password-hint">
+          Use 8+ characters, including uppercase, lowercase,
+          a number and a special character.
+        </small>
+        <small class="error-message" id="passwordError"></small>
+      </div>
+
+
+       <button type="submit" id="submitButton">
+        Create Account
+      </button>
+
+       <p id="successMessage" role="status" aria-live="polite"></p>
+    </form>
+
+    <p class="form-footer">Sign in here</p>
+  </main>
+</body>
+</html>
+
+
+
+    
